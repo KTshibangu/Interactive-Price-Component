@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Simple, traffic-based pricing</h2>
+      <p>
+        Sign-up for our 30-day trial. <br> 
+        No credit card required.
+      </p>
+    </div>
+    <form class="pricing-card" action="">
+        <span class="pageviews">100K PAGEVIEWS</span>
+        <div class="range-input">
+          <input type="range" name="range" id="range" 
+          min="1" max="5" value="3" step="1">
+        </div>
+        <div class="pricing">
+          <span class="price">$16.00</span>
+          <span class="period">/month</span>
+        </div>
+
+        <div class="toggle">
+          <span class="monthly sw-active">Monthly Billing</span>
+          <label class="switch" for="billing-freq">
+            <input type="checkbox" id="billing-freq">
+            <span class="slider round"></span>
+          </label>
+          <span class="yearly">
+            Yearly Billing 
+            <small class="discount">-25%</small>
+          </span>
+        </div>
+
+        <div class="line"></div>
+        <div class="footer">
+          <div class="benefits">
+            <ul>
+              <li><img src="images/icon-check.svg"><p>Unlimited websites</p></li>
+              <li><img src="images/icon-check.svg"><p>100% data ownership</p></li>
+              <li><img src="images/icon-check.svg"><p>Email reports</p></li>
+            </ul>
+          </div>
+          <button id="submit" type="submit">Start My Trial</button>
+        </div>
+    </form>
+  </div>  
+  <script src="script.js"></script>
+</body>
+</html>
